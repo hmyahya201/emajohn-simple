@@ -16,7 +16,6 @@ const Shop = () => {
   const addToCart = (product)=>{
     const newCart = [...cart, product];
     setCart(newCart)
-    console.log(product)
   }
     return (
         <div className = "shop-container">
@@ -31,7 +30,6 @@ const Shop = () => {
                 
             </div>
             <div className="cart-container">
-                <h2>Order summary</h2>
                 <Cart cart = {cart}/>
             </div>
             
